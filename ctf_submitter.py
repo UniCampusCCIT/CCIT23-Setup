@@ -2,7 +2,7 @@ import requests
 import sqlite3
 import time
 
-TEAM_TOKEN = '5d0d59f3f2be5d7643ad37e745a37958'
+TEAM_TOKEN = '9ea235c2089ff71e40192c3628ded1e6'
 API_URL = 'http://10.10.0.1:8080/flags'
 DATABASE_FILE = 'flags.db'
 RATE_LIMIT = 15  # Maximum number of requests per minute
