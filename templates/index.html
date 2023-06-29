@@ -27,24 +27,6 @@
             flex: 1; /* Distribute the available space equally between the boxes */
         }
     </style>
-    <script>
-        // Function to update the flag statistics
-      function updateStats() {
-            // Make an API call or perform any necessary logic to get the updated statistics
-            // Example: You can use fetch() to fetch the statistics from the backend API
-            
-            // Dummy code to simulate the updated statistics
-        const sentFlagsCount = Math.floor(Math.random() * 100);
-        const unsentFlagsCount = Math.floor(Math.random() * 100);
-
-            // Update the HTML elements with the new statistics
-        document.getElementById("sentFlagsCount").textContent = sentFlagsCount;
-        document.getElementById("unsentFlagsCount").textContent = unsentFlagsCount;
-      }
-
-        // Function to update the statistics every 10 seconds
-      setInterval(updateStats, 10000);
-    </script>
 </head>
 <body>
     <h1>Flag Statistics</h1>
