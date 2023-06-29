@@ -19,11 +19,6 @@ def install_github_repo(repo_url: str, install_path: Path):
     subprocess.run(["pip", "install", "-r", "requirements.txt"])  # Assuming a requirements.txt file is present
     subprocess.run(["python", "setup.py", "install"])  # Assuming a setup.py file is present
 
-
-    # Build containers
-    subprocess.run(["docker-compose", "up", "-d"])
-
-
 if __name__ == "__main__":
     if os.geteuid() != 0:
         exit("You need to have root privileges to run this script")
